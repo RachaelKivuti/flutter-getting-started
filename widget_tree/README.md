@@ -14,7 +14,7 @@
  
        -with a widget class.
 
-#### Widgets used
+### Widgets used
 
 ➤ Scaffold—Implements the Material Design visual layout, allowing the use of Flutter’s
 Material Components widgets
@@ -26,7 +26,7 @@ for any image
 
 ➤ Divider—Draws a horizontal line with padding above and below
 
-#### Widgets can be used with both Material Design and Cupertino(for iOS):
+### Widgets can be used with both Material Design and Cupertino(for iOS):
 
 
 ➤ SingleChildScrollview—This adds vertical or horizontal scrolling ability to a single
@@ -55,6 +55,31 @@ a Positioned (optional) widget to align each child of the Stack for the layout n
 also specify the position location distance from the top, bottom, left, and right sides of the
 Stack widget.
 
+### CrossAxisAlignment and MainAxisSize
+
+
+In Flutter's layout system, widgets (like Row, Column, and Flex) have two axes: 
+       -the main axis  
+       -the cross axis 
+The main axis is determined by the direction in which the widgets are laid out (horizontal for Row, vertical for Column), while the cross axis is perpendicular to the main axis.
+
+-CrossAxisAlignment.start: Aligns children to the start of the cross axis.
+
+-CrossAxisAlignment.end: Aligns children to the end of the cross axis.
+
+-CrossAxisAlignment.center: Aligns children at the center of the cross axis.
+
+-CrossAxisAlignment.stretch: Stretches children to fill the cross axis.
+
+-CrossAxisAlignment.baseline: Aligns children along their baseline if they have one, 
+
+-MainAxisSize.min: Specifies that the layout widget should occupy the minimum amount of space along its main axis. 
+In other words, the widget should be as small as possible while still accommodating its children.
+
+-MainAxisSize.max: Specifies that the layout widget should occupy the maximum amount of space along its main axis. 
+In other words, the widget should expand to fill all available space along its main axis.
+
 
 ### Book used to learn flutter framework, dart language: 
 Beginning Flutter by Marco L. Napoli
+
