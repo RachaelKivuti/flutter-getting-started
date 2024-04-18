@@ -26,24 +26,38 @@ Internet.
 
 ### Separation and structure of widgets into different files
 
-Implemented the stateless and stateful widgets.
+Implementation of the stateless and stateful widgets.
 
 
-foundational widgets in Flutter:
+Foundational widgets in Flutter:
 
+**The Scaffold widget implements the basic Material Design visual layout, allowing the simple addition of AppBar, BottomAppBar, FloatingActionButton, Drawer, SnackBar, BottomSheet and more.
+They include:
 
--The Scaffold widget implements the basic Material Design visual layout, allowing the simple addition of AppBar, BottomAppBar, FloatingActionButton, Drawer, SnackBar, BottomSheet and more.
 -AppBar
+
 -BottomNavigationBar
+
 -Drawer
+
 -FloatingActionButton
+
 -TabBar
+
 -TabBarView
+
 -ListView
+
 -GridView
+
 -Column
+
 -Row
+
 -Container
+
 -Text
+
 -Image
+
 -IconButton
