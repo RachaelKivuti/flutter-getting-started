@@ -13,10 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Starter Template',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 2, 121, 28)),
-        canvasColor: Theme.of(context).colorScheme.background,
-        useMaterial3: true,
+        primarySwatch: Colors.blue,
       ),
       home: const Home(),
     );
