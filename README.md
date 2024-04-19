@@ -9,8 +9,10 @@ Once the button is pressed a count(bid) and increases the amount with a constant
 How to structure and organize files and folders and structuring of widgets in different files.
 
 ### Widget tree
+Fundamentals of widget trees
 
-
+### Widget tree Refactor
+Refactoring of widget tree using constant variables, methods ad widget class
 
 
 #### Book used to learn flutter framework, dart language: 
