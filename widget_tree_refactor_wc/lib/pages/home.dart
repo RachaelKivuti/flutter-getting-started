@@ -58,7 +58,7 @@ class RowWidget extends StatelessWidget {
         ),
         Expanded(
           child: Container(
-            color: Colors.amber,
+            color: Colors.greenAccent,
             height: 40.0,
             width: 40.0,
           ),
@@ -67,7 +67,7 @@ class RowWidget extends StatelessWidget {
           padding: EdgeInsets.all(16.0),
         ),
         Container(
-          color: Colors.brown,
+          color: Colors.red,
           height: 40.0,
           width: 40.0,
         ),
@@ -133,24 +133,24 @@ class RowAndStackWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         CircleAvatar(
-          backgroundColor: Colors.lightGreen,
+          backgroundColor: Colors.blue,
           radius: 100.0,
           child: Stack(
             children: <Widget>[
               Container(
                 height: 100.0,
                 width: 100.0,
-                color: Colors.yellow,
+                color: Colors.yellowAccent,
               ),
               Container(
                 height: 60.0,
                 width: 60.0,
-                color: Colors.amber,
+                color: Colors.lightBlueAccent,
               ),
               Container(
                 height: 40.0,
                 width: 40.0,
-                color: Colors.brown,
+                color: Colors.yellow,
               ),
             ],
           ),
