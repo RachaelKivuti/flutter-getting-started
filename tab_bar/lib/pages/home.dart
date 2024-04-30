@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'birthdays.dart';
 import 'gratitude.dart';
 import 'reminders.dart';
+import 'complaint.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -19,7 +20,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
     _tabController.addListener(_tabChanged);
   }
 
@@ -62,6 +63,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Birthdays(),
           Gratitude(),
           Reminders(),
+          Complaint(),
         ]),
       ),
       //contains a TabBar that displays tabs at the bottom of the screen.
@@ -79,11 +81,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
             Tab(
               icon: Icon(Icons.sentiment_satisfied),
-              text: 'Gratitude', // Fix the duplicated 'Birthdays' text
+              text: 'Gratitude',
             ),
             Tab(
               icon: Icon(Icons.access_alarm),
-              text: 'Reminders', // Fix the duplicated 'Birthdays' text
+              text: 'Reminders',
+            ),
+            Tab(
+              icon: Icon(Icons.sentiment_dissatisfied),
+              text: 'Complaint',
             ),
           ],
         ),
