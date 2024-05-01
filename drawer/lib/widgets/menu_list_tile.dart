@@ -29,7 +29,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           },
         ),
         ListTile(
-          leading: const Icon(Icons.cake),
+          leading: const Icon(Icons.sentiment_satisfied),
           title: const Text('Gratitude'),
           onTap: () {
             Navigator.pop(context);
@@ -42,7 +42,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           },
         ),
         ListTile(
-          leading: const Icon(Icons.cake),
+          leading: const Icon(Icons.access_alarm),
           title: const Text('Reminder'),
           onTap: () {
             Navigator.pop(context);
@@ -58,7 +58,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           color: Colors.grey,
         ),
         ListTile(
-          leading: const Icon(Icons.cake),
+          leading: const Icon(Icons.settings),
           title: const Text('Settings'),
           onTap: () {
             Navigator.pop(context);

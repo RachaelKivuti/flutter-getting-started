@@ -2,7 +2,6 @@ import 'package:drawer/widgets/left_drawer.dart';
 import 'package:drawer/widgets/right_drawer.dart';
 import 'package:flutter/material.dart';
 
-
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -16,11 +15,12 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Drawer'),
+        backgroundColor: Colors.blue,
       ),
       drawer: const LeftDrawerWidget(),
       endDrawer: const RightDrawerWidget(),
       body: SafeArea(
-        child: Container(), 
+        child: Container(),
       ),
     );
   }

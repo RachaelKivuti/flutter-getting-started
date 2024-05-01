@@ -13,7 +13,7 @@ class LeftDrawerWidget extends StatelessWidget {
           UserAccountsDrawerHeader(
             currentAccountPicture: Icon(
               Icons.face,
-              size: 48.0,
+              size: 80.0,
               color: Colors.white,
             ),
             accountName: Text('Ray'),
@@ -27,7 +27,7 @@ class LeftDrawerWidget extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/estate.jpg'),
-                fit: BoxFit.cover, 
+                fit: BoxFit.cover,
               ),
             ),
           ),
