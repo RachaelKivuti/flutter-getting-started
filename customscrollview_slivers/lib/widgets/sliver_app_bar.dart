@@ -14,7 +14,7 @@ class SliverAppBarWidget extends StatelessWidget {
           'Parallax Effect',
         ),
         background: Image(
-          image: AssetImage('assets/images/estate,jpg'),
+          image: AssetImage('assets/images/estate.jpg'),
           fit: BoxFit.cover,
         ),
       ),

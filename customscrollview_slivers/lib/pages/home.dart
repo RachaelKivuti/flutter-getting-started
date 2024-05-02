@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('CustomScrollView - Slivers'),
         elevation: 0.0,
+        backgroundColor: Colors.lightGreen,
       ),
       body: const CustomScrollView(
         slivers: <Widget>[
