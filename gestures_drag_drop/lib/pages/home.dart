@@ -60,6 +60,22 @@ class _HomeState extends State<Home> {
         print('onPanUpdate: $details');
         _displayGestureDetected('onPanUpdate:\n$details');
       },
+      //onVerticalDragUpdate: ((DragUpdateDetails details) {
+      // print('onVerticalDragUpdate: $details');
+      // _displayGestureDetected('onVerticalDragUpdate:\n$details');
+      //}),
+      //onHorizontalDragUpdate: (DragUpdateDetails details) {
+      // print('onHorizontalDragUpdate: $details');
+      // _displayGestureDetected('onHorizontalDragUpdate:\n$details');
+      //},
+      //onHorizontalDragEnd: (DragEndDetails details) {
+      // print('onHorizontalDragEnd: $details');
+      // if (details.primaryVelocity < 0) {
+      // print('Dragging Right to Left: ${details.velocity}');
+      // } else if (details.primaryVelocity > 0) {
+      // print('Dragging Left to Right: ${details.velocity}');
+      // }
+      //},
       child: Container(
         color: Colors.lightGreen.shade100,
         width: double.infinity,
