@@ -27,9 +27,22 @@ class _HomeState extends State<Home> {
           _transformScaleAndTranslate(),
           //_transformMatrix4(),
           _positionedStatusBar(context),
+          _positionedInkWellAndInkResponse(context),
         ],
       ),
     );
+  }
+
+  void _setScaleSmall() {
+    setState(() {
+      _currentScale = 0.5;
+    });
+  }
+
+  void _setScaleBig() {
+    setState(() {
+      _currentScale = 16.0;
+    });
   }
 
   Transform _transformScaleAndTranslate() {
@@ -39,6 +52,54 @@ class _HomeState extends State<Home> {
         offset: _currentOffset,
         child: const Image(
           image: AssetImage('assets/images/estate.jpg'),
+        ),
+      ),
+    );
+  }
+
+  Positioned _positionedInkWellAndInkResponse(BuildContext context) {
+    return Positioned(
+      top: 50.0,
+      width: MediaQuery.of(context).size.width,
+      child: Container(
+        color: Colors.white54,
+        height: 56.0,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            InkWell(
+              splashColor: Colors.lightGreenAccent,
+              highlightColor: Colors.lightBlueAccent,
+              onTap: _setScaleSmall,
+              onDoubleTap: _setScaleBig,
+              onLongPress: _onLongPress,
+              child: Container(
+                height: 48.0,
+                width: 128.0,
+                color: Colors.black12,
+                child: const Icon(
+                  Icons.touch_app,
+                  size: 32.0,
+                ),
+              ),
+            ),
+            InkResponse(
+              splashColor: Colors.lightGreenAccent,
+              highlightColor: Colors.lightBlueAccent,
+              onTap: _setScaleSmall,
+              onDoubleTap: _setScaleBig,
+              onLongPress: _onLongPress,
+              child: Container(
+                height: 48.0,
+                width: 128.0,
+                color: Colors.black12,
+                child: const Icon(
+                  Icons.touch_app,
+                  size: 32.0,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
