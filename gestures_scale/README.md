@@ -21,4 +21,4 @@ Any values above 1.0 scale the widget larger and values below 1.0 scale the widg
 ➤ Transform.translate: Constructor to move/position a child widget by using a translation, an offset. 
 The offset argument takes the Offset(double dx, double dy) class by positioning the widget on the x-axis and y-axis.
 
-
+*minor runtime error present*
